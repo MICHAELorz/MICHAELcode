@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var number=0, total=0, avg=0, times=0, min=10000000000000, max=0;
+
+        while(true)
+        {
+            number= window.prompt("請輸入正整數\n結束時輸入-1", "0");
+            if(number==-1)
+            {
+                break;
+            }
+            number= parseInt(number);
+            total= parseInt(total);
+            if(min>number)
+            {
+                min=number;
+            }
+            if(max<number)
+            {
+                max=number;
+            }
+            total=total+number;
+            times++;
+        }
+        
+        avg=total/times;
+        document.writeln("<h1>最大值為</h1>"+max);
+        document.writeln("<h1>最小值為</h1>"+min);
+        document.writeln("<h1>平均值為</h1>"+avg);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+
